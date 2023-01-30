@@ -1,13 +1,9 @@
-let exponentiation = (n, x) => {
-    if(n <= 1) {
-        return n;
-    } else {
-        return x * exponentiation(x, n -1)
+let exponentiation = (x, n) => {
+    let pow = 1;
+    for (let i = 0; i < n; i++) {
+        pow = pow * x;
     }
+    return pow;    
 }
-
-
-
-
-
 module.exports = {exponentiation};
+
